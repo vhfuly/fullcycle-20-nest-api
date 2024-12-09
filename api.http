@@ -1,1 +1,1 @@
-GET http://localhost:3000/places?text=av govenador valadares, betim, 1000
+GET http://localhost:3000/places?text=Avenida Fermino Maltarollo, hortolandia, 1000
