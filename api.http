@@ -6,3 +6,20 @@ GET http://localhost:3000/places?text=Avenida anhanguera, hortolandia, 1000
 @destinationId = ElJBdi4gQW5oYW5ndWVyYSwgMTAwMCAtIFZpbGEgUmVhbCBDb250aW51YWNhbywgSG9ydG9sw6JuZGlhIC0gU1AsIDEzMTgzLTA5MSwgQnJhc2lsIjESLwoUChIJD3S-aB68yJQRV3Gr3c_boN4Q6AcqFAoSCUFrK9MCvMiUEdT_cO7wZZhy
 ###
 GET http://localhost:3000/directions?originId={{originId}}&destinationId={{destinationId}}
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+  "name": "rota 1",
+  "source_id": "{{ originId }}",
+  "destination_id": "{{ destinationId }}"
+}
+
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/1
+

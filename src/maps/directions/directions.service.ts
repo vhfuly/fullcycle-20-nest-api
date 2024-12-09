@@ -26,7 +26,7 @@ export class DirectionsService {
 
     return {
       ...data,
-      resquest: {
+      request: {
         origin: {
           place_id: requestParams.origin,
           location: {
