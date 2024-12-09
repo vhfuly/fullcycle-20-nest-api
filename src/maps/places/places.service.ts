@@ -13,7 +13,6 @@ export class PlacesService {
   ) {}
 
   async findPlaces(text: string) {
-    console.log(text);
     const { data } = await this.googleMapsClient.findPlaceFromText({
       params: {
         input: text,

@@ -1,1 +1,8 @@
-GET http://localhost:3000/places?text=Avenida Fermino Maltarollo, hortolandia, 1000
+GET http://localhost:3000/places?text=Avenida anhanguera, hortolandia, 1000
+
+
+###
+@originId = ElNBdi4gRmVybWlubyBNYWx0YXJvbGxvLCAxMDAwIC0gUGFycXVlIEdhYnJpZWwsIEhvcnRvbMOibmRpYSAtIFNQLCAxMzE4Ni01OTgsIEJyYXNpbCIxEi8KFAoSCT9zFOtYuciUEfoFhM26HdaMEOgHKhQKEgmXh7hlWbnIlBHClwyjvfNC_w
+@destinationId = ElJBdi4gQW5oYW5ndWVyYSwgMTAwMCAtIFZpbGEgUmVhbCBDb250aW51YWNhbywgSG9ydG9sw6JuZGlhIC0gU1AsIDEzMTgzLTA5MSwgQnJhc2lsIjESLwoUChIJD3S-aB68yJQRV3Gr3c_boN4Q6AcqFAoSCUFrK9MCvMiUEdT_cO7wZZhy
+###
+GET http://localhost:3000/directions?originId={{originId}}&destinationId={{destinationId}}
